@@ -29,7 +29,7 @@ export default function Navbar() {
     flex justify-between fixed z-[1000] top-0 left-1/2 -translate-x-1/2 transition-transform duration-300  backdrop-blur-sm
     ${visible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="border-b border-[#fff3] md:pb-0 pb-[.5rem] max-w-[82.5rem] mx-auto w-full flex items-center  px-5">
+        <div className="border-b border-[#fff3] md:pb-0 pb-[.5rem] max-w-[82.5rem] mx-auto w-full flex items-center  md:px-5 px-0">
           <div className="flex flex-1 items-center gap-[1.5rem]">
             <Image src={logo} className="w-[165px] h-[70px]" alt="logo" />
           </div>
@@ -103,12 +103,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-[#121212] backdrop-blur-sm transition-transform duration-300 z-40 
+        className={`fixed top-0 left-0 w-full h-screen bg-[#121212] backdrop-blur-sm transition-transform duration-300 z-[1001] 
         ${mobileMenuOpen ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="relative pt-[70px] px-[1.25rem] pb-[2rem] h-full ">
+        <div className="relative h-full">
           {/* Logo and Close Button Container */}
-          <div className="absolute top-0 left-0 w-full flex justify-between items-center px-[1.25rem] border-b border-[#fff3] ">
+          <div className="absolute top-0 left-0 w-full flex justify-between items-center px-[1.25rem] border-b border-[#fff3] h-[67px]">
             <Image src={logo} className="w-[165px] h-[70px]" alt="logo" />
             <button
               onClick={() => setMobileMenuOpen(false)}
@@ -119,27 +119,39 @@ export default function Navbar() {
             </button>
           </div>
 
-          <ul className="flex flex-col gap-[1.75rem] mt-[2.5rem]">
-            <li className="text-[3rem] leading-[1.2em] text-white">Home</li>
-            <li className="text-[3rem] leading-[1.2em] text-white">Projects</li>
-            <li className="text-[3rem] leading-[1.2em] text-white">About</li>
-            <li className="text-[3rem] leading-[1.2em] text-white">Services</li>
-            <li className="text-[3rem] leading-[1.2em] text-white">Contact</li>
-          </ul>
-          <div className="flex justify-center gap-[2.5rem] mt-[3rem] pt-[1rem]">
-            <Image
-              src={whatsapp}
-              className="w-[24px] h-[24px]"
-              alt="whatsapp"
-            />
-            <Image
-              src={instagram}
-              className="w-[24px] h-[24px]"
-              alt="instagram"
-            />
-            <Image src={twitter} className="w-[24px] h-[24px]" alt="twitter" />
+          <div className="h-full pt-[67px] px-[1.25rem] pb-[2rem]">
+            <ul className="flex flex-col gap-[1.75rem] mt-[2.5rem]">
+              <li className="text-[3rem] leading-[1.2em] text-white">Home</li>
+              <li className="text-[3rem] leading-[1.2em] text-white">
+                Projects
+              </li>
+              <li className="text-[3rem] leading-[1.2em] text-white">About</li>
+              <li className="text-[3rem] leading-[1.2em] text-white">
+                Services
+              </li>
+              <li className="text-[3rem] leading-[1.2em] text-white">
+                Contact
+              </li>
+            </ul>
+            <div className="flex justify-center gap-[2.5rem] mt-[3rem] pt-[1rem]">
+              <Image
+                src={whatsapp}
+                className="w-[24px] h-[24px]"
+                alt="whatsapp"
+              />
+              <Image
+                src={instagram}
+                className="w-[24px] h-[24px]"
+                alt="instagram"
+              />
+              <Image
+                src={twitter}
+                className="w-[24px] h-[24px]"
+                alt="twitter"
+              />
+            </div>
+            <div className=" absolute blurmobile left-0 w-full h-[400px]"></div>
           </div>
-          <div className=" absolute blurmobile left-0 w-full h-[400px]"></div>
         </div>
       </div>
     </>
