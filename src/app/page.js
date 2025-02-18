@@ -15,10 +15,12 @@ export default function Home() {
               Agency{" "}
             </span>
           </h1>
-          <Spline
-            scene="https://prod.spline.design/h5LoeNZkhGZx-mDM/scene.splinecode"
-            className="w-[80%]"
-          />
+          <div className="w-[600px] h-[650px]">
+            <Spline
+              scene="https://prod.spline.design/h5LoeNZkhGZx-mDM/scene.splinecode"
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </div>
       <Slider />

@@ -23,10 +23,11 @@ export default function Navbar() {
 
   return (
     <div
-      className={`w-full h-[67px] border-b border-[#fff3] max-w-[82.5rem] mx-auto items-center px-5 
+      className={`w-full h-[67px]  
     flex justify-between fixed top-0 left-1/2 -translate-x-1/2 transition-transform duration-300  backdrop-blur-sm
     ${visible ? "translate-y-0" : "-translate-y-full"}`}
     >
+      <div className="border-b border-[#fff3] max-w-[82.5rem] mx-auto w-full flex ">
       <div className="flex flex-1 items-center gap-[1.5rem]">
         <Image src={logo} className="w-[165px] h-[70px]" alt="logo" />
       </div>
@@ -78,6 +79,7 @@ export default function Navbar() {
         <Image src={whatsapp} className="w-[24px] h-[24px]" alt="whatsapp" />
         <Image src={instagram} className="w-[24px] h-[24px]" alt="instagram" />
         <Image src={twitter} className="w-[24px] h-[24px]" alt="twitter" />
+      </div>
       </div>
     </div>
   );
