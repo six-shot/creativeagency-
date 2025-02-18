@@ -5,17 +5,18 @@ import Slider from "./components/slider";
 
 export default function Home() {
   return (
-    <div className=" relative font-[family-name:var(--font-manrope)] pb-[2rem]">
-      <div className="relative">
+    <div className=" relative font-[family-name:var(--font-manrope)] pb-[2rem] ">
+      <div className="relative md:px-0 px-5">
         <Navbar />
-        <div className="flex justify-center flex-col items-center text-center pt-[6rem] ">
-          <h1 className="text-[10.4346rem] leading-[1em] text-white tracking-[-.8rem] ">
+        <div className="flex justify-center flex-col items-center text-center md:pt-[6rem] pt-[8rem] ">
+          <h1 className="md:text-[10.4346rem] text-[3rem] leading-[1em] text-white md:tracking-[-.8rem] tracking-[-.06em] ">
             Creative Mind <br />{" "}
             <span className="italic font-[family-name:var(--font-playfair)]">
               Agency{" "}
             </span>
           </h1>
-          <div className="w-[600px] h-[650px]">
+          <div className="md:hidden block w-full h-[216px] bg-black mb-[25px] mt-[20px] rounded-[32px]"></div>
+          <div className="w-[600px] h-[650px] md:block hidden">
             <Spline
               scene="https://prod.spline.design/h5LoeNZkhGZx-mDM/scene.splinecode"
               className="w-full h-full"
