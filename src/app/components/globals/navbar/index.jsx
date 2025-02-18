@@ -29,7 +29,7 @@ export default function Navbar() {
     flex justify-between fixed z-[1000] top-0 left-1/2 -translate-x-1/2 transition-transform duration-300  backdrop-blur-sm
     ${visible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="border-b border-[#fff3] md:pb-0 pb-[.5rem] max-w-[82.5rem] mx-auto w-full flex items-center  md:px-5 px-0">
+        <div className="border-b border-[#fff3] md:pb-0 pb-[.5rem] max-w-[82.5rem] mx-auto w-full flex items-center  md:px-5 px-0 ">
           <div className="flex flex-1 items-center gap-[1.5rem]">
             <Image src={logo} className="w-[165px] h-[70px]" alt="logo" />
           </div>
@@ -108,18 +108,20 @@ export default function Navbar() {
       >
         <div className="relative h-full">
           {/* Logo and Close Button Container */}
-          <div className="absolute top-0 left-0 w-full flex justify-between items-center px-[1.25rem] border-b border-[#fff3] h-[67px]">
-            <Image src={logo} className="w-[165px] h-[70px]" alt="logo" />
-            <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-[2.25rem] h-[2.25rem] flex items-center justify-center"
-            >
-              <span className="absolute w-[2.25rem] h-[2px] bg-white rotate-45"></span>
-              <span className="absolute w-[2.25rem] h-[2px] bg-white -rotate-45"></span>
-            </button>
+          <div className="absolute top-0 left-0 w-full flex justify-between items-center px-[1.25rem] h-[67px]">
+            <div className="max-w-[82.5rem] w-full mx-auto flex justify-between items-center border-b border-[#fff3] pb-[0.5rem]">
+              <Image src={logo} className="w-[165px] h-[70px]" alt="logo" />
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-[2.25rem] h-[2.25rem] flex items-center justify-center"
+              >
+                <span className="absolute w-[2.25rem] h-[2px] bg-white rotate-45"></span>
+                <span className="absolute w-[2.25rem] h-[2px] bg-white -rotate-45"></span>
+              </button>
+            </div>
           </div>
 
-          <div className="h-full pt-[67px] px-[1.25rem] pb-[2rem]">
+          <div className="h-full pt-[67px] px-[1.25rem] pb-[2rem] ">
             <ul className="flex flex-col gap-[1.75rem] mt-[2.5rem]">
               <li className="text-[3rem] leading-[1.2em] text-white">Home</li>
               <li className="text-[3rem] leading-[1.2em] text-white">
