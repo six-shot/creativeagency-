@@ -10,7 +10,7 @@ body {
   --dim-grey: #525252;
   --a--black: #121212;
   --a--white: white;
-  --accent-gradient: #1a56eec5;
+  --accent-gradient: #1a56ee7d;
   --transparent: #1a56ee00;
   --a--60-white-transparent: #fff9;
   --dark-grey: #949494;
@@ -76,5 +76,19 @@ li:hover .hover-text-wrapper {
     margin: 0;
     left: 0;
     right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .blurmobile {
+    background-image: linear-gradient(
+      to top,
+      var(--accent-gradient) 0%,
+      var(--accent-gradient) 15%,
+      var(--transparent) 95%
+    );
+    opacity: 0.7;
+    width: 100%;
+    bottom: 0;
   }
 }
