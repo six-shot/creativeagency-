@@ -27,29 +27,26 @@ body {
   --black-light: #2c2c2c;
   --red: var(--a--60-white-transparent);
   --white-light: #e2e2e2;
-  --primary: #1A51DD;
+  --primary: #1a51dd;
 }
 
 .blur {
-  background-image: 
-         radial-gradient(
+  background-image: radial-gradient(
       circle farthest-corner at 0% 35%,
       var(--primary) 0%,
       var(--transparent) 35%
     ),
-    
-      radial-gradient(
-        circle farthest-corner at 100% 35%,
-        var(--primary) 0%,
-        var(--transparent) 35%
-      );
+    radial-gradient(
+      circle farthest-corner at 100% 35%,
+      var(--primary) 0%,
+      var(--transparent) 35%
+    );
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
-  
 }
 
 .hover-text-wrapper {
@@ -68,3 +65,16 @@ li:hover .hover-text-wrapper {
   transform: translateY(-1.8rem);
 }
 
+@media (max-width: 640px) {
+  .blur {
+    background-image: radial-gradient(
+      circle farthest-corner at 50% 50%,
+      var(--primary) 0%,
+      var(--transparent) 100%
+    );
+    width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+}
