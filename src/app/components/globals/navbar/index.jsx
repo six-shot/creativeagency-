@@ -32,25 +32,45 @@ export default function Navbar() {
       </div>
       <nav className="flex flex-1">
         <ul className="flex items-center gap-[1.5rem]">
-          <li>
-            <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em]">
-              Projects
-            </h5>
+          <li className="relative overflow-hidden h-[1.5rem]">
+            <div className="hover-text-wrapper">
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                Projects
+              </h5>
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                Projects
+              </h5>
+            </div>
           </li>
-          <li>
-            <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em]">
-              About
-            </h5>
+          <li className="relative overflow-hidden h-[1.5rem]">
+            <div className="hover-text-wrapper">
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                About
+              </h5>
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                About
+              </h5>
+            </div>
           </li>
-          <li>
-            <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em]">
-              Services
-            </h5>
+          <li className="relative overflow-hidden h-[1.5rem]">
+            <div className="hover-text-wrapper">
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                Services
+              </h5>
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                Services
+              </h5>
+            </div>
           </li>
-          <li>
-            <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em]">
-              Contact
-            </h5>
+          <li className="relative overflow-hidden h-[1.5rem]">
+            <div className="hover-text-wrapper">
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                Contact
+              </h5>
+              <h5 className="text-[1rem] leading-[1.5rem] text-white tracking-[-.05em] transition-transform duration-300">
+                Contact
+              </h5>
+            </div>
           </li>
         </ul>
       </nav>
