@@ -2,20 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+}
+
+:root {
+  --dim-grey: #525252;
+  --a--black: #121212;
+  --a--white: white;
+  --accent-gradient: #1a56eec5;
+  --transparent: #1a56ee00;
+  --a--60-white-transparent: #fff9;
+  --dark-grey: #949494;
+  --silver: #c5c5c5;
+  --a--accent: #1a56ee;
+  --blue-hover: #2f70e0;
+  --a--20-white-transparent: #fff3;
+  --a--40-transparent: #fff6;
+  --orange-red\<deleted\|variable-9b00a5ef\>: #f54a14;
+  --a--grey: #252525;
+  --orange\<deleted\|variable-94af9f49-6d26-8b04-cd11-2571c138f48c\>: #eb5757;
+  --gainsboro: #e5e3db;
+  --white: #fff;
+  --black-light: #2c2c2c;
+  --red: var(--a--60-white-transparent);
+  --white-light: #e2e2e2;
+  --primary: #1A51DD;
+}
+
+.blur {
+  background-image: 
+         radial-gradient(
+      circle farthest-corner at 0% 35%,
+      var(--primary) 0%,
+      var(--transparent) 35%
+    ),
+    
+      radial-gradient(
+        circle farthest-corner at 100% 35%,
+        var(--primary) 0%,
+        var(--transparent) 35%
+      );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  
 }
