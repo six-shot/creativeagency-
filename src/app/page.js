@@ -5,10 +5,10 @@ import Slider from "./components/slider";
 
 export default function Home() {
   return (
-    <div className="relative font-[family-name:var(--font-manrope)] pb-[2rem] w-screen min-h-screen ">
-      <div className="relative w-full">
+    <div className="relative font-[family-name:var(--font-manrope)] pb-[2rem] w-screen min-h-screen overflow-x-hidden">
+      <div className="relative w-full  overflow-x-hidden">
         <Navbar />
-        <div className="w-full">
+        <div className="w-full overflow-x-hidden">
           <div className="flex flex-col text-center md:pt-[10rem] pt-[8rem] w-full  xl:px-0 px-5">
             <h1 className="xl:text-[10.4346rem] md:text-[5rem] text-[3rem] leading-[1em] text-white  xl:tracking-[-.8rem] tracking-[-.06em] ">
               Creative Mind <br className="xl:block hidden" />{" "}
