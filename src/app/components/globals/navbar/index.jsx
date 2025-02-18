@@ -25,15 +25,15 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`w-full h-[67px]  md:px-0 px-[1.25rem]
-    flex justify-between fixed top-0 left-1/2 -translate-x-1/2 transition-transform duration-300  backdrop-blur-sm
+        className={`w-full h-[67px]  1440:px-0 px-[1.25rem]
+    flex justify-between fixed z-[1000] top-0 left-1/2 -translate-x-1/2 transition-transform duration-300  backdrop-blur-sm
     ${visible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="border-b border-[#fff3] md:pb-0 pb-[.5rem] max-w-[82.5rem] mx-auto w-full flex items-center ">
+        <div className="border-b border-[#fff3] md:pb-0 pb-[.5rem] max-w-[82.5rem] mx-auto w-full flex items-center  px-5">
           <div className="flex flex-1 items-center gap-[1.5rem]">
             <Image src={logo} className="w-[165px] h-[70px]" alt="logo" />
           </div>
-          <nav className="md:flex hidden flex-1">
+          <nav className="xl:flex hidden flex-1">
             <ul className="flex items-center gap-[1.5rem]">
               <li className="relative overflow-hidden h-[1.5rem]">
                 <div className="hover-text-wrapper">
@@ -77,7 +77,7 @@ export default function Navbar() {
               </li>
             </ul>
           </nav>
-          <div className="flex-1 md:flex hidden justify-end items-center gap-[.875rem]">
+          <div className="flex-1 xl:flex hidden justify-end items-center gap-[.875rem]">
             <Image
               src={whatsapp}
               className="w-[24px] h-[24px]"
@@ -91,7 +91,7 @@ export default function Navbar() {
             <Image src={twitter} className="w-[24px] h-[24px]" alt="twitter" />
           </div>
           <div
-            className="md:hidden flex flex-col gap-[5px] cursor-pointer"
+            className="xl:hidden flex flex-col gap-[5px] cursor-pointer"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <span className="w-[2.25rem] h-[2px] bg-white"></span>
@@ -140,7 +140,6 @@ export default function Navbar() {
             <Image src={twitter} className="w-[24px] h-[24px]" alt="twitter" />
           </div>
           <div className=" absolute blurmobile left-0 w-full h-[400px]"></div>
-          
         </div>
       </div>
     </>
