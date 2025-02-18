@@ -8,7 +8,7 @@ export default function Home() {
     <div className=" relative font-[family-name:var(--font-manrope)] pb-[2rem] ">
       <div className="relative md:px-0 px-5">
         <Navbar />
-        <div className="flex justify-center flex-col items-center text-center md:pt-[6rem] pt-[8rem] ">
+        <div className="flex justify-center flex-col items-center text-center md:pt-[10rem] pt-[8rem] ">
           <h1 className="md:text-[10.4346rem] text-[3rem] leading-[1em] text-white md:tracking-[-.8rem] tracking-[-.06em] ">
             Creative Mind <br />{" "}
             <span className="italic font-[family-name:var(--font-playfair)]">
