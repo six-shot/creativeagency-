@@ -16,12 +16,7 @@ export default function Home() {
             </span>
           </h1>
           <div className="md:hidden block w-full h-[216px] bg-black mb-[25px] mt-[20px] rounded-[32px]"></div>
-          {/* <div className="w-[600px] h-[650px] md:block hidden">
-            <Spline
-              scene="https://prod.spline.design/h5LoeNZkhGZx-mDM/scene.splinecode"
-              className="w-full h-full"
-            />
-          </div> */}
+        
           <div className="w-[1173px] h-[800px] md:block hidden">
             <iframe
               src="https://my.spline.design/nexbotrobotcharacterconcept-d102b37faf185a07d56c51a533bcc238/"
